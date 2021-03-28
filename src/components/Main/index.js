@@ -1,23 +1,35 @@
+import React, { useEffect } from 'react';
 import Typist from 'react-typist';
-import { MainSection, MainContent, Btn1, IconWhats } from './styles';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { MainSection, MainContainer, MainText, Img$, Btn1, IconWhats } from './styles';
 
 const Main = () => {
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return ( 
-       
     <MainSection>
-      <MainContent>
-        <h1>O Parceiro de Crédito</h1>
-        <h2>do Produtor Rural</h2>
-        <Typist>
-        <h4>Serviço de crédito ágil e 100%  digital que chegou ao campo para ajudar o produtor   rural, sem burocracias.</h4>
-        </Typist>
-        <Btn1 type="submit">Simulação</Btn1>
-      </MainContent>
+      <MainContainer>
+        <Img$>
+        <img src="/$$$.png"/>
+        </Img$>
+        <MainText>
+          <p>Agroforte Digital</p>
+          <h1>Parceiro de Crédito</h1>
+          <h2>do Produtor Rural</h2>
+          <Typist cursor={{show: false}}>
+          <h4>Serviço de crédito 100% digital.</h4>
+          </Typist>
+          <div data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
+            <Btn1 type="button">Quero conhecer</Btn1>
+          </div>
+        </MainText>
+      </MainContainer> 
       <IconWhats>
-      <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5519999821179">        
-      <img src="/icon-whats2.png"/>
-      </a>
+        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5519999821179">        
+        <img src="/icon-whats2.png"/>
+        </a>
       </IconWhats>
     </MainSection>
   )

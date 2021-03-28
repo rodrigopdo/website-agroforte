@@ -1,57 +1,98 @@
 import styled from 'styled-components'
 
 export const MainSection = styled.div `
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/cow-farm.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
+  rgba(0, 0, 0, 0.1)), url(/bg-main4.svg);
+  background-position: 0 35px;
   background-repeat: no-repeat;
-  height: 870px;
-  background-size: cover;
+  background-size: 100vw;
   background-attachment: fixed;
-}
-`;  
+  height: 75rem;
+`;
 
-export const MainContent = styled.div `
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-top: 160px;
+export const MainContainer = styled.div `
+  display: flex;
+  flex-direction: start;
+`;
 
-  h1 {
-    /*@include fontSizeBreakpoint (25px, 30px, 40px, 45px, 50px);*/
-    font-size: 3rem;
-    text-align: start;
-    font-weight: 520;
-    color: #fff;
-  }
-  h2 {
-    /*@include fontSizeBreakpoint (25px, 30px, 33px, 36px, 40px);*/
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-align: start;
-    color: #fff;
-  }
-  h4 {
-    /*@include fontSizeBreakpoint (14px, 15px, 16px, 16px, 18px);*/
-    text-align: start;
-    color: #fff;
-    max-width: 500px;
-    font-weight: 500;
-    padding: 30px 0 30px;
-    line-height: 1.5rem;
+export const Img$ = styled.div `
+  position: absolute;
+  top: 18.3rem;
+  left: -12.5rem;
+
+  img {
+    height: 8.1rem;
   }
 `;
 
-export const Btn1 = styled.button `
-  background: #1DA042;
+export const MainText = styled.div `
+  max-width: 85rem;
+  margin: 0 0 0 17rem;
+  padding-top: 16rem;
+
+  h1 {
+    /*@include fontSizeBreakpoint (25px, 30px, 40px, 45px, 50px);*/
+    color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: start;
+
+  }
+  h2 {
+    /*@include fontSizeBreakpoint (25px, 30px, 33px, 36px, 40px);*/
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: start;
+  }
+  h4 {
+    /*@include fontSizeBreakpoint (14px, 15px, 16px, 16px, 18px);*/
+    max-width: 300px;
+    padding: 20px 0 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+
+  h4:after {
+    content: '|';
+    margin-left: 1px;
+    opacity: 1;
+    color: #fff;
+    animation: piscar .9s infinite;
+}
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: start;
+  font-weight: 300;
   color: #fff;
-  padding: 20px 50px;
-  border-radius: 50px;
+}     
+`;
+
+export const Btn1 = styled.button `
+  margin: 2rem auto 0;
+  background: #3dd969;
+  color: #fff;
+  padding: 1.8rem 3.0rem;
+  border-radius: 5rem;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.3s ease;
 
   &:hover {
-    background-color: #145536;
+    transform: scale(1.04)
   }
 
   @media (max-width: 580px) {
@@ -60,7 +101,6 @@ export const Btn1 = styled.button `
     font-size: 14px;
     padding: 20px 30px;
   }
-
 `;
 
 export const IconWhats = styled.div `
@@ -85,10 +125,10 @@ export const IconWhats = styled.div `
           right: 30px;
       }
       to {
-          right: 32px;
+          right: 31px;
       }
       to {
-          right: 28px;
+          right: 29px;
       }
   }
 `;
