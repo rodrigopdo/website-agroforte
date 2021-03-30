@@ -45,8 +45,8 @@ const About = () => {
           text="Usamos a tecnologia para encurtar os prazos de aprovação no processo de crédito."  
         />
       </AboutGrid>
-      <Btn>Quero me Cadastrar</Btn>
-      <h4>Esteja por dentro de tudo que a Agroforte pode te oferecer!</h4>
+      {/* <Btn>Quero me Cadastrar</Btn>
+      <h4>Esteja por dentro de tudo que a Agroforte pode te oferecer!</h4> */}
     </AboutSection>
   )
 }
