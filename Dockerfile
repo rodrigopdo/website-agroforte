@@ -9,7 +9,7 @@ WORKDIR /usr/app
 ## Copia tudo que começa com package e termina com .json para dentro da pasta /usr/app
 COPY package*.json ./
 
-## Executa npm install para adicionar as dependências e criar a pasta node_modules
+## Executa yarn para adicionar as dependências e criar a pasta node_modules
 RUN yarn 
 
 ## Copia tudo que está no diretório onde o arquivo Dockerfile está 
