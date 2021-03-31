@@ -10,7 +10,7 @@ const Form = () => {
   return (
     <FormRegister onSubmit={handleSubmit(onSubmit)}>
         <img src="/logo-dark.svg"/>
-      <h3>Cadastre-se e receba as novidades!</h3>
+      <h3>Cadastre-se e receba as nossas novidades!</h3>
       <InputContainer>
         <input 
           name="name" 

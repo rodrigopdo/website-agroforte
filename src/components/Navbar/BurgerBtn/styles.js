@@ -9,7 +9,7 @@ const StyledBurger = styled.div`
   right: 30px;
   z-index: 2;
 
-  @media (max-width: 768px) {
+  @media (max-width: 895px) {
     display: flex;
     justify-content: space-around;
     align-items: center;

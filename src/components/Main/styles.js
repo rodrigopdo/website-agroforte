@@ -5,51 +5,53 @@ export const MainSection = styled.div `
   rgba(0, 0, 0, 0.1)), url(/bg-main4.svg);
   background-position: 0 35px;
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   background-attachment: fixed;
   height: 75rem;
+  @media(max-width:600px) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.1)), url(/bg-main-mobile.png);
+    background-position: 0 -1rem;
+    background-attachment: fixed;
+    height: 65rem;
+  }
+  @media(max-width: 760px) and (min-width: 601px){ 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.1)), url(/bg-main-tablet.png);
+    background-position: 0 -1rem;
+    background-attachment: fixed;
+    height: 65rem;
+  }
 `;
 
 export const MainContainer = styled.div `
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:0 2rem;
   display: flex;
   flex-direction: start;
 `;
 
-export const Img$ = styled.div `
-  position: absolute;
-  top: 18.3rem;
-  left: -12.5rem;
-
-  img {
-    height: 8.1rem;
-  }
-`;
-
 export const MainText = styled.div `
-  max-width: 85rem;
-  margin: 0 0 0 17rem;
-  padding-top: 16rem;
+  padding: 20rem 3rem;
 
   h1 {
-    /*@include fontSizeBreakpoint (25px, 30px, 40px, 45px, 50px);*/
     color: #fff;
-    font-weight: 600;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    font-weight: 500;
     text-align: start;
-
   }
   h2 {
-    /*@include fontSizeBreakpoint (25px, 30px, 33px, 36px, 40px);*/
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 500;
     text-align: start;
   }
   h4 {
-    /*@include fontSizeBreakpoint (14px, 15px, 16px, 16px, 18px);*/
-    max-width: 300px;
+    max-width: 320px;
     padding: 20px 0 20px;
-    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
     color: #fff;
     font-weight: 400;
     line-height: 2.2rem;
@@ -62,24 +64,50 @@ export const MainText = styled.div `
     color: #fff;
     animation: piscar .9s infinite;
 }
-@keyframes piscar {
-  0%, 100% {
-    opacity: 1;
+  @keyframes piscar {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
   }
-  50% {
-    opacity: 0;
-  }
-}
 
-p {
-  font-size: 1.4rem;
-  text-align: start;
-  font-weight: 300;
-  color: #fff;
-}     
+  p {
+    font-size: 1.4rem;
+    text-align: start;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  @media(max-width: 810px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+  } 
+  @media (max-width: 587px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.3rem;
+    }
+    h4 {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 587px) {
+    padding: 28rem 1rem;
+  }
 `;
 
-export const Btn1 = styled.button `
+export const Btn1 = styled.a `
   margin: 2rem auto 0;
   background: #3dd969;
   color: #fff;
@@ -112,12 +140,11 @@ export const IconWhats = styled.div `
   z-index: 1; 
 
   img {
-    height: 50px;
-    cursor: pointer;
+    height: 5rem;
   }
   
   &:hover {
-      animation: whats .1s ;
+    animation: whats .1s ;
   } 
  
   @keyframes whats {
@@ -130,6 +157,10 @@ export const IconWhats = styled.div `
       to {
           right: 29px;
       }
+  }
+  @media(max-width: 678px) {
+    img {
+    height: 3.7rem;
   }
 `;
 

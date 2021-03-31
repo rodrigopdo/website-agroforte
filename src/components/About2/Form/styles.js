@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FormRegister = styled.form `
   background-color: #F0F9E1;
   height: 470px;
-  margin: -270px auto 0;
+  margin: -310px auto 0;
   padding: 10px;
   border-radius: 1rem;
   min-width: 280px;
@@ -13,12 +13,21 @@ export const FormRegister = styled.form `
     margin: 30px 25px 0;
     color: #3dd969;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
+    @media(max-width: 940px) {
+      font-size: 1.8rem;
+    }
   }
   img {
     display: block;
     margin: 2rem auto;
     height: 6rem;
+  }
+  
+  @media(max-width: 940px) {
+    max-width: 300px;
+    margin: -230px auto 0;
+    padding:0.5rem;
   }
 `;
 
@@ -75,7 +84,6 @@ export const InputContainer = styled.div `
       margin: 15px 0 0 20px;
       transition: all .3s ease-out;
   }
-
 `;
 
 export const BtnForm = styled.button `

@@ -21,7 +21,7 @@ export const Ul = styled.ul `
     color: #3dd969;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 895px) {
     flex-flow: column nowrap;
     background: linear-gradient(180deg, #1DB954 0.49%, #00704A 99.46%);
     position: fixed;
@@ -47,13 +47,13 @@ export const Ul = styled.ul `
   }
 `;
 
-export const NavBtn = styled.button `
+export const NavBtn = styled.a `
   background: #3dd969;
   box-shadow: 0 6px 10px 8px rgb(13 151 255 / 20%);
   margin: 0 0 0 30px;
   text-align: center;
   padding: 10px 20px;
-  color: #fff;
+  color: #fffff;
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 500;

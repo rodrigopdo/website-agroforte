@@ -12,7 +12,7 @@ const SideBar = ({ open }) => {
       <li>
         <a href="#contact">Fale com a Gente</a>
       </li>
-      <NavBtn>Saber Mais</NavBtn>
+      {/*<NavBtn type="button" href="#about2">Saber Mais</NavBtn>*/}
     </Ul>
   )
 }

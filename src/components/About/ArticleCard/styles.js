@@ -21,5 +21,9 @@ export const Card = styled.article `
     height: 6rem;
     margin: 0 auto 0 0;
   }
+
+  @media(max-width: 800px) {
+    padding: 2.5rem 1rem;
+  }
 `;
 

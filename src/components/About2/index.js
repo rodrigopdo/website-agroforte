@@ -11,7 +11,7 @@ const About2 = () => {
 
   return (
     <> 
-    <AboutSection2>
+    <AboutSection2 id="about2">
     <HeaderAbout2>
       <div>
         <h2 data-aos="fade-left">Faça parte da<br></br> <span>Comunidade</span> Agroforte</h2>
