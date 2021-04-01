@@ -17,6 +17,11 @@ export const MobileImg = styled.div `
     height: 40rem;
     margin: -20rem auto -50rem;
   }
+  @media(max-width: 800px) {
+    img {
+    height: 30rem;
+    margin: -12rem auto 0rem;
+  }
 `;
 
  export const AboutGrid = styled.div `
@@ -42,6 +47,17 @@ export const MobileImg = styled.div `
   }
   article:nth-child(4) {
     grid-area: card4;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 4rem auto 0;
+    padding: 0rem 1rem 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4";    
   }
 `;
 
@@ -72,11 +88,19 @@ export const HeaderDna = styled.div `
         background: #3dd969;
         border-radius: 50px;
       }
+      @media(max-width: 800px) {
+        margin: 8rem auto;
+        padding: 0 1rem;
+        font-size: 2.5rem;
+      }
     }
   }
   span {
     color: #3dd969;
     font-size: 4rem;
+    @media(max-width: 800px) {
+      font-size: 3.5rem;
+    }
   }
 `;
 

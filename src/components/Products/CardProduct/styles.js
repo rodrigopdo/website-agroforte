@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const Card = styled.div `
+  overflow: hidden;
   background-color: #fff;
   box-shadow: 0 0.375em 1.6rem 0 rgba(0,0,0,.1);
   padding: 60px 5px;
   margin: 1.5rem;
   text-align: center;
-  height: auto;
   border-radius: 10px;
   transition: 0.3s ease-in;
   
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
   }
   
   h3 {
@@ -32,7 +32,7 @@ export const Card = styled.div `
   }
 `;
 
-export const BtnCard = styled.button `
+export const BtnCard = styled.a `
   background-color: #3dd969;
   color: #fff;
   width: 70%;
@@ -46,10 +46,10 @@ export const BtnCard = styled.button `
   text-transform: uppercase;
   cursor: pointer;
   &:hover {
-      box-shadow: -2px 1px 6px 2px rgba(0,0,0,0.27);
+    box-shadow: -2px 1px 6px 2px rgba(0,0,0,0.27);
   }   
 `;
-
+/*
 export const BtnCardDisabled = styled(BtnCard) `
   opacity: 0.6;
   cursor: auto;
@@ -57,5 +57,5 @@ export const BtnCardDisabled = styled(BtnCard) `
     box-shadow: none;
   }
 `;
-
+*/
 

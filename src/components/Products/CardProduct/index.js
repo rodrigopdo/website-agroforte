@@ -1,4 +1,4 @@
-import { Card, BtnCard, BtnCardDisabled } from './styles';
+import { Card, BtnCard } from './styles';
 
 export const CardProduct = (props) => {
   return (
@@ -6,7 +6,7 @@ export const CardProduct = (props) => {
       <img src={props.img} alt={props.alt}/>
       <h3>{props.title}</h3>
       <p>{props.text}</p>
-      <BtnCard>Saber Mais</BtnCard>     
+      <BtnCard href="#about2">Saber Mais</BtnCard>     
     </Card>
   )
 }

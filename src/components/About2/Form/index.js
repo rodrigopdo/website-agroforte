@@ -1,16 +1,26 @@
 import { FormRegister, InputContainer, TermOfUse, BtnForm } from './styles';
 import React from "react";
 import { useForm } from "react-hook-form";
+import emailjs from 'emailjs-com';
 
 const Form = () => {
-  const { register, handleSubmit } = useForm();
+  const { register } = useForm();
 
-  const onSubmit = data => console.log(data);
+  const sendEmail = e => {
+    e.preventDefault();
+    emailjs.sendForm('service_flllq47', 'template_qossuj9', e.target, 'user_4sufeYa4jyr628nKD0A7H')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  }
 
   return (
-    <FormRegister onSubmit={handleSubmit(onSubmit)}>
+    <FormRegister onSubmit={sendEmail}>
         <img src="/logo-dark.svg"/>
-      <h3>Cadastre-se e receba as novidades!</h3>
+      <h3>Cadastre-se e receba as nossas novidades!</h3>
       <InputContainer>
         <input 
           name="name" 

@@ -4,6 +4,7 @@ import About from '../components/About';
 import Products from '../components/Products';
 import About2 from '../components/About2';
 import Contact from '../components/Contact';
+import CookieConsent from "react-cookie-consent";
 
 export default function Home() {
   return (
@@ -16,8 +17,18 @@ export default function Home() {
       <Main />
       <About />
       <Products />
-      {/* <About2 /> */}
+      <About2 />
       <Contact />
+      <CookieConsent
+        location="bottom"
+        buttonText="Entendi"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+      >    
+        <span style={{ fontSize: "12px" }}>Este site usa cookies e dados pessoais de acordo com os nossos Termos de Uso e Política de Privacidade e, ao continuar navegando neste site, você declara estar ciente dessas condições.</span>
+      </CookieConsent>    
     </>
   )
 }

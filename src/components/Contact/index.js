@@ -21,7 +21,7 @@ const Contact = () => {
         <ContactCard 
           title= "Telefone"
           icon="fas fa-phone-volume"
-          text= "0800 350 0890"
+          text= "( 41 ) 99217-6821"
         />
       </ContactContainer>
     </ContactSection>

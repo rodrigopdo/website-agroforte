@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { CardProduct, CardProductDisabled } from './CardProduct';
+import { CardProduct } from './CardProduct';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { 
@@ -20,20 +20,20 @@ const Products = () => {
         <GridCards >
           <CardProduct  
             title="Crédito para Adequação" 
-            text="Lorem Ipsum is simply dummy text of the printing and  typesetting" 
+            text="Crédito ideal para o produtor que precisa ampliar a sua estrutura e adequar-se a nova demanda" 
             img="adequacao-icon-2.png" 
             alt="Crédito para Adequação"
           />
-          <CardProductDisabled 
+          <CardProduct 
             title="Crédito para Custeio" 
-            text="Lorem Ipsum is simply dummy text of the printing and  typesetting" 
+            text="Crédito para o produtor que precisa cumprir com sua despesas regulares de toda a sua operação" 
             img="custeio-icon-3.png" 
             alt="Crédito para Custeio"
             able="disabled"
           />
-          <CardProductDisabled 
+          <CardProduct 
             title="Antecipação de Recebíveis" 
-            text="Lorem Ipsum is simply dummy text of the printing and  typesetting" 
+            text="Antecipe o seus recebimentos e tenha mais uma alternativa para aliviar o seu capital de giro." 
             img="antecipacao-icon-2.png" 
             alt="Antecipação de Recebíveis"
           />

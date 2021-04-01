@@ -8,7 +8,6 @@ export const ProductContainer = styled.div `
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem 0 12rem;
-
   
   h2 {
     margin: 10rem auto 6rem;
@@ -25,11 +24,22 @@ export const ProductContainer = styled.div `
       background: #3dd969;
       border-radius: 50px;
     }
+    @media(max-width: 800px) {
+      margin: 8rem auto 0;
+      font-size: 2.5rem;
+    }
   }
   span {
     color: #3dd969;
+    padding: 0 2rem;
     font-size: 3rem;
-    font-weight: 600;
+    @media(max-width: 800px) {
+      margin: 0 auto;
+      font-size: 2.8rem;
+    }
+  }
+  @media(max-width: 800px) {
+    padding: 1rem 0 8rem;
   }
 `;
 
@@ -37,7 +47,7 @@ export const GridCards = styled.div `
   display: flex;
   justify-content: space-around;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 900px) {
     margin: 60px 30px 0;
     flex-direction: column;
   }

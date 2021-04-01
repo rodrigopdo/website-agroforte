@@ -30,19 +30,19 @@ const About = () => {
           img="/icon-customizacao.png"
           all="Customização"
           title="Customização"
-          text="Somos especializados em crédito para o pequeno e médio produtor."  
+          text="Ofertamos linhas de crédito customizadas de acordo com a real necessidade e perfil do pequeno e médio produtor rural."  
         />
         <ArticleCards 
           img="/icon-transparencia.png"
           all="Transparência"
           title="Transparência"
-          text="Usamos a tecnologia para encurtar o tempo de burocracias que tanto afetam o processo de crédito."  
+          text="Não incluímos tarifas embutidas nos serviços, nem vendas casadas. Eliminamos custos desnecessários."  
         />
         <ArticleCards 
           img="/icon-agilidade.png"
           all="Agilidade"
           title="Agilidade"
-          text="Usamos a tecnologia para encurtar os prazos de aprovação no processo de crédito."  
+          text="Usamos a tecnologia para encurtar os prazos de aprovação e eliminar burocracias que tanto afetam o processo de crédito."  
         />
       </AboutGrid>
       {/* <Btn>Quero me Cadastrar</Btn>

@@ -11,9 +11,11 @@ const Main = () => {
   return ( 
     <MainSection>
       <MainContainer>
+      {/*
         <Img$>
         <img src="/$$$.png"/>
         </Img$>
+      */}
         <MainText>
           <p>Agroforte Digital</p>
           <h1>Parceiro de Crédito</h1>
@@ -22,12 +24,12 @@ const Main = () => {
           <h4>Serviço de crédito 100% digital.</h4>
           </Typist>
           <div data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
-            <Btn1 type="button">Quero conhecer</Btn1>
+            <Btn1 href="#about2">Quero conhecer</Btn1>
           </div>
         </MainText>
       </MainContainer> 
       <IconWhats>
-        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5519999821179">        
+        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5541992176821">        
         <img src="/icon-whats2.png"/>
         </a>
       </IconWhats>
