@@ -29,7 +29,7 @@ const Main = () => {
         </MainText>
       </MainContainer> 
       <IconWhats>
-        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5519999821179">        
+        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5541992176821">        
         <img src="/icon-whats2.png"/>
         </a>
       </IconWhats>

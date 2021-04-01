@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainSection = styled.div `
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
-  rgba(0, 0, 0, 0.1)), url(/bg-main4.svg);
+  rgba(0, 0, 0, 0.1)), url(/bg-desktop-3.png);
   background-position: 0 35px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,16 +10,15 @@ export const MainSection = styled.div `
   height: 75rem;
   @media(max-width:600px) {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.1)), url(/bg-main-mobile.png);
-    background-position: 0 -1rem;
-    background-attachment: fixed;
+    rgba(0, 0, 0, 0.1)), url(/bg-mobile-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 65rem;
   }
   @media(max-width: 760px) and (min-width: 601px){ 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.1)), url(/bg-main-tablet.png);
-    background-position: 0 -1rem;
-    background-attachment: fixed;
+    rgba(0, 0, 0, 0.1)), url(/bg-tablet-2.png);
+    background-position: 0 35px;
     height: 65rem;
   }
 `;
@@ -100,9 +99,11 @@ export const MainText = styled.div `
     }
     h4 {
       font-size: 1.4rem;
+      margin-bottom: 6rem;
     }
   }
   @media (max-width: 587px) {
+    margin: 0 auto;
     padding: 28rem 1rem;
   }
 `;
@@ -127,6 +128,7 @@ export const Btn1 = styled.a `
     display: block;
     width: 100%;
     font-size: 14px;
+    margin: 0 auto;
     padding: 20px 30px;
   }
 `;

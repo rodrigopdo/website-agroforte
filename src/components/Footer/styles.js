@@ -30,7 +30,7 @@ export const FooterTop = styled(FooterSection) `
   }
 `;
 
-export const BtnFooter = styled.button `
+export const BtnFooter = styled.a `
   display: block;
   background: #3dd969;
   box-shadow: 0 6px 10px 8px rgb(13 151 255 / 14%);

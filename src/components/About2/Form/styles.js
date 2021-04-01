@@ -21,7 +21,7 @@ export const FormRegister = styled.form `
   img {
     display: block;
     margin: 2rem auto;
-    height: 6rem;
+    height: 4rem;
   }
   
   @media(max-width: 940px) {

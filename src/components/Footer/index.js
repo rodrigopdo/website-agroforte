@@ -18,9 +18,9 @@ const Footer = () => {
       <FooterSection>
         <FooterTop>
           <img src="/logo.png"/>
-          <h2 data-aos="fade-right">Chegamos para ajudar o seu negócio.</h2>
+          <h2 data-aos="fade-right">O Parceiro Digital do Produtor Rural.</h2>
           <div data-aos="fade-up"> 
-            <BtnFooter >Saber Mais</BtnFooter>
+            <BtnFooter href="#about2" >Saber Mais</BtnFooter>
           </div>
         </FooterTop>
       </FooterSection>
@@ -31,10 +31,10 @@ const Footer = () => {
           </div>
           <div>        
             <h5>Siga-nos em nossas redes sociais</h5>
-            <a href="https:www.facebook.com">
+            <a href="https://www.facebook.com/agrofortedigital">
             <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https:www.instagram.com">
+            <a href="https://www.instagram.com/agrofortedigital/">
             <i class="fab fa-instagram"></i>
             </a>
           </div>
