@@ -1,0 +1,70 @@
+stages:
+  - approvals
+  - deploy
+
+Approval - Geovani:
+  when: manual
+  only:
+    - tags
+  stage: approvals
+  tags:
+    - maven
+  script:
+    - echo "Approved by $GITLAB_USER_NAME!"
+    - echo $GITLAB_USER_EMAIL
+    - echo $GITLAB_USER_ID
+    - echo $GITLAB_USER_LOGIN
+    - echo $GITLAB_USER_NAME
+    - echo $TRIGGER_PAYLOAD
+
+Approval - Gustavo:
+  when: manual
+  only:
+    - tags
+  stage: approvals
+  tags:
+    - maven
+  script:
+    - echo "Approved by $GITLAB_USER_NAME!"
+    - echo $GITLAB_USER_EMAIL
+    - echo $GITLAB_USER_ID
+    - echo $GITLAB_USER_LOGIN
+    - echo $GITLAB_USER_NAME
+    - echo $TRIGGER_PAYLOAD
+
+Deploy - DEV:
+  only:
+    - develop
+  stage: deploy
+  tags:
+    - maven
+  script:
+    - aws ecr get-login-password | sudo docker login --username AWS --password-stdin 040356314360.dkr.ecr.us-east-2.amazonaws.com
+    - aws secretsmanager get-secret-value --secret-id api-dev-website | python3 -c "import sys, json; print(json.load(sys.stdin)['SecretString'])" > configuration.json
+    - sudo docker build . --tag 040356314360.dkr.ecr.us-east-2.amazonaws.com/dev/website:latest
+    - sudo docker push 040356314360.dkr.ecr.us-east-2.amazonaws.com/dev/website:latest
+    - printf "{\"applicationName\":\"dev_website\",\"deploymentGroupName\":\"dev_website\",\"revision\":{\"revisionType\":\"S3\",\"s3Location\":{\"bucket\":\"agforte-infra\",\"key\":\"appspecs/dev_website.yaml\",\"bundleType\":\"YAML\"}}}" > create-deployment.json
+    - aws deploy create-deployment --cli-input-json file://create-deployment.json --region us-east-2
+
+Deploy - HMG:
+  when: manual
+  stage: deploy
+  tags:
+    - maven
+  script:
+    - echo "Hello World!"
+
+Deploy - PRD:
+  when: manual
+  only:
+    - tags
+  stage: deploy
+  tags:
+    - maven
+  script:
+    - aws ecr get-login-password | sudo docker login --username AWS --password-stdin 040356314360.dkr.ecr.us-east-2.amazonaws.com
+    - aws secretsmanager get-secret-value --secret-id api-prd-website | python3 -c "import sys, json; print(json.load(sys.stdin)['SecretString'])" > configuration.json
+    - sudo docker build . --tag 040356314360.dkr.ecr.us-east-2.amazonaws.com/prd/website:latest
+    - sudo docker push 040356314360.dkr.ecr.us-east-2.amazonaws.com/prd/website:latest
+    - printf "{\"applicationName\":\"prd_website\",\"deploymentGroupName\":\"prd_website\",\"revision\":{\"revisionType\":\"S3\",\"s3Location\":{\"bucket\":\"agforte-infra\",\"key\":\"appspecs/prd_website.yaml\",\"bundleType\":\"YAML\"}}}" > create-deployment.json
+    - aws deploy create-deployment --cli-input-json file://create-deployment.json --region us-east-2
