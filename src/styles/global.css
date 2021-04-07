@@ -10,7 +10,7 @@ html, body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-ul, ol, li {
+ul, ol, li a {
   list-style: none;
   cursor: pointer;
 }
