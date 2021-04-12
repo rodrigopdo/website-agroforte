@@ -54,7 +54,7 @@ export const InputContainer = styled.div `
     display: block;
     color: #333333;
     min-width: 180px;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: all .3s ease-out; 
     &:focus{
     border-bottom: 2px solid #1DA042;
@@ -78,7 +78,7 @@ export const InputContainer = styled.div `
       position: absolute;
       top: 7px;
       left: 25px;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: #333333;
       font-weight: 400;
       margin: 15px 0 0 20px;

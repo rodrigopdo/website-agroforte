@@ -4,7 +4,7 @@ const SideBar = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <a href="#about">A Agroforte</a>
+        <a href="#about">Quem Somos</a>
       </li>
       <li>
         <a href="#product">Linhas de Crédito</a>

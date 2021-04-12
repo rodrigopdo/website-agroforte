@@ -26,10 +26,11 @@ const Footer = () => {
       </FooterSection>
         <FooterBottom>
           <div>
-            <p>Rua Álvaro Anes, 56 – conjunto 61, Pinheiros, São Paulo, SP – CEP 05421-010</p>
-            <p>&copy; 2021 - Agroforte - Todos os direitos reservados</p>
+            <p>ENDEREÇO 1: Rua Álvaro Anes, 56 – conjunto 61, Pinheiros, São Paulo, SP – CEP 05421-010</p>
+            <p>ENDEREÇO 2: Rua Bonfim, 1741, Centro, Toledo, PR – CEP 85901-000</p>
+            <p>&copy; 2021 - AgroForte - Todos os direitos reservados</p>
           </div>
-          <div>        
+          <article>        
             <h5>Siga-nos em nossas redes sociais</h5>
             <a href="https://www.facebook.com/agrofortedigital">
             <i class="fab fa-facebook-f"></i>
@@ -37,7 +38,10 @@ const Footer = () => {
             <a href="https://www.instagram.com/agrofortedigital/">
             <i class="fab fa-instagram"></i>
             </a>
-          </div>
+            <a href="https://www.linkedin.com/company/43370107/">
+            <i class="fab fa-linkedin"></i>
+            </a>
+          </article>
         </FooterBottom>
     </>
   )

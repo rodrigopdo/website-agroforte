@@ -13,7 +13,7 @@ const About = () => {
     <AboutSection id="about">
       <HeaderDna>
         <div>
-          <h2 data-aos="fade-right">O <span>DNA</span> Agroforte</h2>
+          <h2 data-aos="fade-right">O <span>DNA</span> AgroForte</h2>
         </div>
       </HeaderDna>
       <MobileImg data-aos="fade-up">
@@ -23,26 +23,26 @@ const About = () => {
         <ArticleCards 
           img="/icon-inovacao.png"
           all="inovação"
-          title="Inovação"
-          text="Utilizamos TECNOLOGIA para dar ao produtor acesso a produtos financeiros de forma rápida e fácil."  
+          title="INOVAÇÃO"
+          text="Tecnologia de ponta para oferecer ao produtor crédito de forma rápida e fácil, sem aval ou garantia de terra."  
         />
         <ArticleCards 
           img="/icon-customizacao.png"
           all="Customização"
-          title="Customização"
-          text="Ofertamos linhas de crédito customizadas de acordo com a real necessidade e perfil do pequeno e médio produtor rural."  
+          title="CUSTOMIZAÇÃO"
+          text="Taxas competitivas com parcelas retidas no lote. Crédito de acordo com a real necessidade do produtor."  
         />
         <ArticleCards 
           img="/icon-transparencia.png"
           all="Transparência"
-          title="Transparência"
-          text="Não incluímos tarifas embutidas nos serviços, nem vendas casadas. Eliminamos custos desnecessários."  
+          title="TRANSPARÊNCIA"
+          text="Sem tarifas embutidas e serviços indesejados. Eliminamos custos desnecessários."  
         />
         <ArticleCards 
           img="/icon-agilidade.png"
           all="Agilidade"
-          title="Agilidade"
-          text="Usamos a tecnologia para encurtar os prazos de aprovação e eliminar burocracias que tanto afetam o processo de crédito."  
+          title="AGILIDADE"
+          text="Prazos de aprovação curtos e sem burocracias que tanto afetam o processo de crédito."  
         />
       </AboutGrid>
       {/* <Btn>Quero me Cadastrar</Btn>

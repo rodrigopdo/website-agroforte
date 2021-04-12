@@ -66,21 +66,25 @@ export const FooterBottom = styled.div `
 
   div {
     text-align: center;
-    padding: 3rem 0 1rem;
+    padding: 3rem 0 3rem;
+  }
+  article {
+    text-align: center;
+    padding: 2rem 0 1rem;
   }
   h5 {
     margin: 0rem 0 0;
     font-size: 1.2rem;
-    color: #f3f3f3;
+    color: #3dd969;
   }
 
   p {
     color: #3dd969;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1.1rem;
   }
   i {
-    color: #f4f4f4;
+    color: #3dd969;
     font-size: 2.5rem;
     padding: 1rem;
     margin: 0 auto;

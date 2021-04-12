@@ -17,11 +17,11 @@ const Main = () => {
         </Img$>
       */}
         <MainText>
-          <p>Agroforte Digital</p>
+         
           <h1>Parceiro de Crédito</h1>
           <h2>do Produtor Rural</h2>
           <Typist cursor={{show: false}}>
-          <h4>Serviço de crédito 100% digital.</h4>
+          <h4>Serviço de crédito digital que chegou para ajudar o produtor rural.</h4>
           </Typist>
           <div data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
             <Btn1 href="#about2">Quero conhecer</Btn1>

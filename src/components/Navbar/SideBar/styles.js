@@ -8,6 +8,7 @@ export const Ul = styled.ul `
   li {
     color: #3dd969;
     font-size: 1.5rem;
+    font-weight: 500;
     padding: 30px 25px;
     line-height: 0.6;
     transition: 0.3s ease;

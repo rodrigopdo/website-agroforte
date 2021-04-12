@@ -47,7 +47,7 @@ export const MainText = styled.div `
     text-align: start;
   }
   h4 {
-    max-width: 320px;
+    max-width: 350px;
     padding: 20px 0 20px;
     margin-bottom: 4rem;
     font-size: 1.8rem;

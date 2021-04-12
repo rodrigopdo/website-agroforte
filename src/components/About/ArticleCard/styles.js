@@ -6,19 +6,20 @@ export const Card = styled.article `
   text-align: center;
 
   h3 {
-      color: #333333;
-      font-size: 1.8rem;
+      color: #3dd969;
+      font-size: 3rem;
+      font-weight: 700;
       margin: 10px 0;
   }
   p {
-      max-width: 250px;
+      max-width: 300px;
       margin: 0 auto;
       color: #333333;
-      font-size: 1.6rem;
-      font-weight: 500;
+      font-size: 2rem;
+      font-weight: 600;
   }
   img{
-    height: 6rem;
+    height: 10rem;
     margin: 0 auto 0 0;
   }
 

@@ -25,13 +25,14 @@ export const MobileImg = styled.div `
 `;
 
  export const AboutGrid = styled.div `
-  max-width: 850px;
+  max-width: 1000px;
   margin: 5rem auto 0;
   padding: 1rem 1rem 6rem;
   display: grid;
-  grid-template-columns: 28rem 28rem;
+  grid-template-columns: 32rem 32rem;
   justify-content: space-between;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 9rem;
   grid-template-areas: 
     "card1 card3"
     "card2 card4";
