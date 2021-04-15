@@ -54,6 +54,7 @@ export const MobileImg = styled.div `
     margin: 4rem auto 0;
     padding: 0rem 1rem 0;
     grid-template-columns: 1fr;
+    grid-gap: 4rem;
     grid-template-areas:
     "card1"
     "card2"

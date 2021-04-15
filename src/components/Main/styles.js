@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainSection = styled.div `
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), 
-  rgba(0, 0, 0, 0.1)), url(/bg-desktop-3.png);
+  rgba(0, 0, 0, 0.1)), url(/bg-desktop-tiny.png);
   background-position: 0 35px;
   background-repeat: no-repeat;
   background-size: cover;

@@ -20,20 +20,20 @@ const Products = () => {
         <GridCards >
           <CardProduct  
             title="Crédito para Adequação" 
-            text="Crédito ideal para o produtor que precisa ampliar a sua estrutura e adequar-se a nova demanda" 
+            text="Invista na sua estrutura e no ganho de produtividade do seu negócio" 
             img="adequacao-icon-2.png" 
             alt="Crédito para Adequação"
           />
           <CardProduct 
             title="Crédito para Custeio" 
-            text="Crédito para o produtor que precisa cumprir com sua despesas regulares de toda a sua operação" 
+            text="Crédito rápido para os custos do dia a dia de sua produção" 
             img="custeio-icon-3.png" 
             alt="Crédito para Custeio"
             able="disabled"
           />
           <CardProduct 
             title="Antecipação de Recebíveis" 
-            text="Antecipe o seus recebimentos e tenha mais uma alternativa para aliviar o seu capital de giro." 
+            text="Antecipe seu recebimento de forma ágil e alivie seu capital de giro" 
             img="antecipacao-icon-2.png" 
             alt="Antecipação de Recebíveis"
           />

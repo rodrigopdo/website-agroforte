@@ -42,7 +42,7 @@ export const HeaderAbout2 = styled.div `
       border-radius: 50px;
     }
     @media(max-width: 800px) {
-      margin: 8rem auto 0;
+      margin: 0 auto 0;
       font-size: 2rem;
     }
   }

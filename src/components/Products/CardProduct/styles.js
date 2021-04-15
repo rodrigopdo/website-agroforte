@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div `
   overflow: hidden;
+  max-width: 29rem;
   background-color: #fff;
   box-shadow: 0 0.375em 1.6rem 0 rgba(0,0,0,.1);
   padding: 60px 5px;
@@ -9,7 +10,6 @@ export const Card = styled.div `
   text-align: center;
   border-radius: 10px;
   transition: 0.3s ease-in;
-  
   &:hover {
     transform: scale(1.03);
   }

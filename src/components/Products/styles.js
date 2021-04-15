@@ -31,7 +31,6 @@ export const ProductContainer = styled.div `
   }
   span {
     color: #3dd969;
-    padding: 0 2rem;
     font-size: 3rem;
     @media(max-width: 800px) {
       margin: 0 auto;
@@ -48,8 +47,9 @@ export const GridCards = styled.div `
   justify-content: space-around;
 
   @media screen and (max-width: 900px) {
-    margin: 60px 30px 0;
+    margin: 60px auto 30px;
     flex-direction: column;
+    align-items: center;
   }
 `;
     
