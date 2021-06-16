@@ -6,6 +6,15 @@ export const Wrapper = styled.div `
   height: auto;
   width: 100vw;
   justify-content: center;
+    img {
+    position: absolute;
+    left: 10rem;
+    margin-top: -4rem;
+    height: 35rem;
+    z-index: -1;
+    opacity: 0.1;
+    }
+
 `;
 
 export const FaqContainer = styled.div `
@@ -25,8 +34,6 @@ export const Header = styled.div `
   display: flex;
   flex-direction: column;
   text-align: center;
-
-
   h2 {
     color: #3dd969;
     font-size: 2.8rem;
@@ -71,19 +78,20 @@ export const Title = styled.div `
 `;
 
 export const ArrowIcon = styled.span `
-    font-size: 2.5rem;
-    color: #3DD969;
-    font-weight: 700;
+  font-size: 2.5rem;
+  color: #3DD969;
+  font-weight: 700;
 `;
 
 export const Answer = styled.p `
   color: #333333;
   max-height: ${props=> props.show ? '40rem' : '0'};
-  ${'' /* opacity: ${props=> props.show ? '1' :  '0'}; */}
   font-size: 1.4rem;
+  margin-right: 3rem;
   font-weight: 400;
   overflow: hidden;
   transition: all 0.5s ease;
+
 `;
 
 // export const Dropped= styled.p ` 

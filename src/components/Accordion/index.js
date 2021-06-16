@@ -14,11 +14,10 @@ const Accordion = () => {
   }
   return (
     <Wrapper>
+      <img src="/question.svg"/>
       <FaqContainer>
-
         <Question>
           <Header>
-          {/* <img src="/question.svg"/> */}
           <h2>Perguntas Frequentes</h2>
           <h4>Encontre aqui algumas das respostas para as dúvidas mais frequentes!</h4>
           </Header>
