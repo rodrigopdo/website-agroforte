@@ -121,7 +121,7 @@ export const Btn1 = styled.a `
   transition: 0.3s ease;
 
   &:hover {
-    transform: scale(1.04)
+    opacity: 0.7;
   }
 
   @media (max-width: 580px) {

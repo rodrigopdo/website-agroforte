@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from './data';
-import { Wrapper, Question, Item, Title, Answer, Dropped } from './styles';
+import { Wrapper, FaqContainer, Header, Question, Item, Title, Answer, ArrowIcon } from './styles';
+import { FaAngleDown } from 'react-icons/fa';
 
 const Accordion = () => {
   const [open, setOpen] = useState(null)
@@ -13,23 +14,38 @@ const Accordion = () => {
   }
   return (
     <Wrapper>
-      <Question>
-        {data.map((item, i) => (
-          <Item>
-            <Title onClick={() => toggle(i)}>
-              <h2>{item.question}</h2>
-              <span>{open === i ? '-' : '+'}</span>
-            </Title>
-            
-              {open === i ? (
-                <Answer show={true}>
-                  {item.answer}
-                </Answer>
-                ) : null
-              }
-          </Item>
-        ))};
-      </Question>
+      <FaqContainer>
+
+        <Question>
+          <Header>
+          {/* <img src="/question.svg"/> */}
+          <h2>Perguntas Frequentes</h2>
+          <h4>Encontre aqui algumas das respostas para as dúvidas mais frequentes!</h4>
+          </Header>
+            {data.map((item, i) => (
+              <Item>
+                <Title onClick={() => toggle(i)}>
+                  <h2>{item.question}</h2>
+                  <ArrowIcon>{open === i ? 
+                    <FaAngleDown style={{transform: 'rotate(180deg)'}}/> 
+                    : 
+                    <FaAngleDown />}
+                  </ArrowIcon>
+                </Title>
+                
+                {open === i ? 
+                  <Answer show={true}>
+                    {item.answer}
+                  </Answer>
+                  :   
+                  <Answer show={false}>
+                    {item.answer}
+                  </Answer>
+                }
+              </Item>
+            ))};
+        </Question>
+      </FaqContainer>
     </Wrapper>
   )
 }
