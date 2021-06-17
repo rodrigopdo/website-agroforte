@@ -11,13 +11,7 @@ const Main = () => {
   return ( 
     <MainSection>
       <MainContainer>
-      {/*
-        <Img$>
-        <img src="/$$$.png"/>
-        </Img$>
-      */}
-        <MainText>
-         
+        <MainText>     
           <h1>Parceiro de Crédito</h1>
           <h2>do Produtor Rural</h2>
           <Typist cursor={{show: false}}>

@@ -28,10 +28,10 @@ select,
 button,
 input,
 input[type=email], 
-input[type=text],
 input[type=number],
 input[type=text]   {
   outline:none;
+  background-color: transparent;
 } 
 input::placeholder {
   text-transform: none;

@@ -52,6 +52,7 @@ const Form = () => {
           ref={register({ required: true, minLength: 8 })} 
           autofocus
           required
+          autoComplete="off"
           />
         <label>Nome Completo</label>
           <FeedbackError show={msgError}>É necessario adicionar pelo menos um sobrenome.</FeedbackError>
@@ -63,6 +64,7 @@ const Form = () => {
           placeholder="E-mail" 
           ref={register({ required: true, minLength: 8 })}
           required
+          autoComplete="off"
         />
         <label>Email</label>
       </InputContainer>
