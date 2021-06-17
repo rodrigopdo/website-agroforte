@@ -19,7 +19,7 @@ const Accordion = () => {
         <Question>
           <Header>
           <h2>Perguntas Frequentes</h2>
-          <h4>Encontre aqui algumas das respostas para as dúvidas mais frequentes!</h4>
+          <h4>Conta para a gente a sua dúvida?</h4>
           </Header>
             {data.map((item, i) => (
               <Item>

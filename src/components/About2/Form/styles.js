@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FormRegister = styled.form `
-  background-color: #F0F9E1;
+  background-color: #FFF;
   height: 470px;
   margin: -310px auto 0;
   padding: 10px;
@@ -11,8 +11,8 @@ export const FormRegister = styled.form `
   h3 {
     text-align: center;
     margin: 30px 25px 0;
-    color: #3dd969;
-    font-size: 2rem;
+    color: #333333;
+    font-size: 1.8rem;
     font-weight: 700;
     @media(max-width: 940px) {
       font-size: 1.8rem;
@@ -43,7 +43,7 @@ export const TermOfUse = styled.div `
 export const InputContainer = styled.div `
   position: relative;
   padding-top: 13px;
-  margin-top: 25px;
+  margin-top: 12px;
   
   input {
     border-bottom: 1px solid #bfb5b5;
@@ -97,9 +97,29 @@ export const BtnForm = styled.button `
   text-transform: uppercase;
   font-weight: bold;
   margin: 1rem auto;
-  
   &:hover {
       box-shadow: -2px 1px 8px 2px rgba(0,0,0,0.27);
   }
+`;
+
+export const Feedback = styled.span `
+  opacity: ${props => props.show ? '1' : '0'};
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3DD969;
+  margin-top: 2rem;
+  transition: all 0.3s;
+`;
+
+export const FeedbackError = styled.span `
+  opacity: ${props => props.show ? '1' : '0'};
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: red;
+  margin-top: 1rem;
 `;
 
