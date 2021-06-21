@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const AboutSection2 = styled.div `
   
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), 
-  rgba(0, 0, 0, 0.1)), url(/countryside.jpg);
+  rgba(0, 0, 0, 0.1)), url(/countryside1.jpg);
   background-repeat: no-repeat;
   height: 70rem;
   background-size: cover;

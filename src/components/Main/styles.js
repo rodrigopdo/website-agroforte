@@ -5,7 +5,7 @@ export const MainSection = styled.div `
   rgba(0, 0, 0, 0.1)), url(/bg-desktop-tiny.png); */}
   
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), 
-  rgba(0, 0, 0, 0)), url(/bg-desktop-tiny.png);
+  rgba(0, 0, 0, 0)), url(/bg-desktop.png);
   background-position: 0 35px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,14 +13,14 @@ export const MainSection = styled.div `
   height: 75rem;
   @media(max-width:600px) {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.1)), url(/bg-mobile-3.png);
+    rgba(0, 0, 0, 0.1)), url(/bg-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 65rem;
   }
   @media(max-width: 760px) and (min-width: 601px){ 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.1)), url(/bg-tablet-2.png);
+    rgba(0, 0, 0, 0.1)), url(/bg-tablet.png);
     background-position: 0 35px;
     height: 65rem;
   }

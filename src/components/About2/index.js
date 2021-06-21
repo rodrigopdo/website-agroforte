@@ -20,7 +20,7 @@ const About2 = () => {
       <AboutContainer2>
         <Form />
         <MobileImg2>
-          <img src="mobile-new-logo.png"></img>
+          <img src="mobile-hands.png"></img>
         </MobileImg2>
       </AboutContainer2> 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1DA042" fill-opacity="1" d="M0,0L1440,32L1440,0L0,0Z"></path></svg>
