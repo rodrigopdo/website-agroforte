@@ -13,7 +13,7 @@ const Accordion = () => {
     setOpen(i)
   }
   return (
-    <Wrapper>
+    <Wrapper id="faq">
       <img src="/question.svg"/>
       <FaqContainer>
         <Question>

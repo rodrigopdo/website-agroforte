@@ -1,4 +1,5 @@
 import { Ul, NavBtn } from './styles';
+import Link from 'next/link';
 
 const SideBar = ({ open }) => {
   return (
@@ -8,6 +9,9 @@ const SideBar = ({ open }) => {
       </li>
       <li>
         <a href="#product">Linhas de Crédito</a>
+      </li>
+      <li>
+        <a href="#faq">Perguntas Frequentes</a>
       </li>
       <li>
         <a href="#contact">Fale com a Gente</a>

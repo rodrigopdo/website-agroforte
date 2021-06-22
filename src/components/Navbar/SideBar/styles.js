@@ -22,7 +22,7 @@ export const Ul = styled.ul `
     color: #3dd969;
   }
 
-  @media (max-width: 895px) {
+  @media (max-width: 995px) {
     flex-flow: column nowrap;
     background: linear-gradient(180deg, #1DB954 0.49%, #00704A 99.46%);
     position: fixed;
