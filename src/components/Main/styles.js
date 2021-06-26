@@ -166,6 +166,7 @@ export const IconWhats = styled.div `
   @media(max-width: 678px) {
     img {
     height: 3.7rem;
+    }
   }
 `;
 
