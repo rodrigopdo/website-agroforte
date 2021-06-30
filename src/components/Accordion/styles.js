@@ -75,6 +75,7 @@ export const Title = styled.div `
     &:hover {
       opacity: 0.8;
     }
+  }
 `;
 
 export const ArrowIcon = styled.span `
