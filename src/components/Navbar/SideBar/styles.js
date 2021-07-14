@@ -48,26 +48,26 @@ export const Ul = styled.ul `
   }
 `;
 
-export const NavBtn = styled.a `
-  background: #3dd969;
-  box-shadow: 0 6px 10px 8px rgb(13 151 255 / 20%);
-  margin: 0 0 0 30px;
-  text-align: center;
-  padding: 10px 20px;
-  color: #fffff;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  border-radius: 50px;
-  transition: 0.3s ease;
+// export const NavBtn = styled.a `
+//   background: #3dd969;
+//   box-shadow: 0 6px 10px 8px rgb(13 151 255 / 20%);
+//   margin: 0 0 0 30px;
+//   text-align: center;
+//   padding: 10px 20px;
+//   color: #fffff;
+//   font-size: 1.3rem;
+//   text-transform: uppercase;
+//   font-weight: 500;
+//   border-radius: 50px;
+//   transition: 0.3s ease;
 
-  &:hover {
-    box-shadow: -2px 1px 8px 2px rgba(0,0,0,0.27);
-    opacity: 0.7;
-  }
+//   &:hover {
+//     box-shadow: -2px 1px 8px 2px rgba(0,0,0,0.27);
+//     opacity: 0.7;
+//   }
 
-  @media (max-width: 768px) {
-    margin: 25px 0;
-    width: 50%;
-  }   
-`;
+//   @media (max-width: 768px) {
+//     margin: 25px 0;
+//     width: 50%;
+//   }   
+// `;
